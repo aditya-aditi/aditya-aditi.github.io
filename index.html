@@ -79,8 +79,7 @@
       </h1>
       <div class="typewriter">
       <p class="lead">
-        <center><b> In this website you will get articles, short interesting stories, projects made using html, css and
-          JavaScript and many more. </b></center>
+        <center><span id="typed"></span></center>
       </p>
       </div>
       <hr class="my-4">
@@ -144,5 +143,21 @@
 
   </footer>
 </body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.9/typed.min.js" async defer></script>
+<script>
+  window.onload = function () {
+    console.log("loaded")
+    var typed = new Typed('#typed', {
+      strings: ["In this website you will get articles", "short interesting stories", "projects made using html, css and JavaScript", " and many more."],
+      backSpeed: 15,
+      smartBackspace: true,
+      backDelay: 1200,
+      startDelay: 1000,
+      typeSpeed: 25,
+      loop: true,
+    });
+  };
+</script>
 
 </html>
